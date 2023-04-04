@@ -76,8 +76,8 @@
         $.get(url, function(returned_data){
         alert(returned_data);	
         var elememt = document.getElementsByName('testDiv');
-        alert(element);
-        element.innerHtml = returned_data;
+        alert(element[0]);
+        element[0].innerHtml = returned_data;
   });
 }
 append_url_content_to_div("https://metaversedaily.github.io/file.txt");
