@@ -76,6 +76,7 @@
         $.get(url, function(returned_data){
         alert(returned_data);	
         var elememt = document.getElementsByName('testDiv');
+        alert(element);
         element.innerHtml = returned_data;
   });
 }
