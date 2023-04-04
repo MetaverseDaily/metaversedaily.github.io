@@ -75,7 +75,7 @@
     function append_url_content_to_div(url){
         $.get(url, function(returned_data){
         alert(returned_data);	
-        var elememt = document.getElementsByName('testDiv');
+        var element = document.getElementsByName('testDiv');
         alert(element[0]);
         element[0].innerHtml = returned_data;
   });
