@@ -74,7 +74,9 @@
     <script>
     function append_url_content_to_div(url){
         $.get(url, function(returned_data){
-        alert(returned_data);							
+        alert(returned_data);	
+        var elememt = document.getElementsByName('testDiv');
+        element.innerHtml = returned_data;
   });
 }
 append_url_content_to_div("https://metaversedaily.github.io/file.txt");
@@ -745,8 +747,7 @@ append_url_content_to_div("https://metaversedaily.github.io/file.txt");
 
 
                                             <div class='module-excerpt'>
-                                                <p><object data="./file.txt" type="text/plain">
-                                                    </object>
+                                                <p name='testDiv'>
                                                 </p>
                                             </div>
 
