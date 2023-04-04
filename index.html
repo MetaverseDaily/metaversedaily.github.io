@@ -72,6 +72,7 @@
 
     <script>
     var txtFile = new XMLHttpRequest();
+        alert(${resourcesFolderName});
     txtFile.open("GET", "${resourcesFolderName}/text.txt", true);
     txtFile.onreadystatechange = function() {
         if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
