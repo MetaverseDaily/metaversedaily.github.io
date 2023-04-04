@@ -72,21 +72,6 @@
 
     <script>
         alert('step 1');
-    var txtFile = new XMLHttpRequest();
-        alert('step 2');
-        alert(${resourcesFolderName});
-    txtFile.open("GET", "${resourcesFolderName}/text.txt", true);
-    txtFile.onreadystatechange = function() {
-        if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
-            if (txtFile.status === 200) {  // Makes sure it's found the file.
-                allText = txtFile.responseText; 
-                //lines = txtFile.responseText.split("\n"); // Will separate each line into an array
-                var customTextElement = document.getElementById('textHolder');
-                customTextElement.innerHTML = txtFile.responseText;
-            }
-        }
-    }
-    txtFile.send(null);
     </script>
 
 
