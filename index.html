@@ -69,9 +69,16 @@
 
 
     <meta name='twitter:site' content='@live' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-
-
+    <script>
+    function append_url_content_to_div(url){
+        $.get(url, function(returned_data){
+        alert(returned_data);							
+  });
+}
+append_url_content_to_div("https://metaversedaily.github.io/file.txt");
+    </script>
 
 
     <title>Metaverse Daily Latests</title>
