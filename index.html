@@ -72,9 +72,12 @@
 
     <script>
         alert('step 1');
-        var txtFile = new XMLHttpRequest();
+        const fs = require("fs");
         alert('step 2');
-        alert(${resourcesFolderName});
+        fs.readFile("demo.txt", (err, data) => {
+        if (err) throw err;
+            alert(data.toString());
+        });
     </script>
 
 
