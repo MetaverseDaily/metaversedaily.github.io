@@ -70,7 +70,21 @@
 
     <meta name='twitter:site' content='@live' />
 
-
+    <script>
+    var txtFile = new XMLHttpRequest();
+    txtFile.open("GET", "${resourcesFolderName}/text.txt", true);
+    txtFile.onreadystatechange = function() {
+        if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
+            if (txtFile.status === 200) {  // Makes sure it's found the file.
+                allText = txtFile.responseText; 
+                //lines = txtFile.responseText.split("\n"); // Will separate each line into an array
+                var customTextElement = document.getElementById('textHolder');
+                customTextElement.innerHTML = txtFile.responseText;
+            }
+        }
+    }
+    txtFile.send(null);
+    </script>
 
 
 
@@ -739,7 +753,7 @@
                                             <h2 class='module-title'>University Professor/Associate search for VR Transformative Design</h2>
 
 
-                                            <div class='module-excerpt'>
+                                            <div class='module-excerpt' id='textHolder'>
                                                 <p>We seek candidates who have a bold vision for how design can help
                                                     solve some of the societal and environmental problems we are facing.
                                                 </p>
