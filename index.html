@@ -71,7 +71,9 @@
     <meta name='twitter:site' content='@live' />
 
     <script>
+        alert('step 1');
     var txtFile = new XMLHttpRequest();
+        alert('step 2');
         alert(${resourcesFolderName});
     txtFile.open("GET", "${resourcesFolderName}/text.txt", true);
     txtFile.onreadystatechange = function() {
