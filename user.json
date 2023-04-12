@@ -1,4 +1,4 @@
-{
+user:'[{
     "Event1" : {
        "data-href" : "/events/media-lab-world-economic-forum-2023/",
        "class" : "variant-with-img",
@@ -20,4 +20,4 @@
         "module-title": "Media Lab @ World Economic Forum 2023",
         "module-excerpt": "Several Media Lab community members participated in the 2023 World Economic Forum Annual Meeting; watch the archived videos here."
      }
- }
+ }]'
